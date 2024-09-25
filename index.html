@@ -1,1 +1,152 @@
-<h1>José Luis Puto</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctoral Thesis</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="assets/images/header.jpg" alt="Header Image" class="header-image">
+        <h1> Tesis Doctoral: Herramientas analíticas basadas en la aplicación de machine learning sobre datos espectroscópicos</h1>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showSection('introduction')">Introduction</a></li>
+                <li><a href="#" onclick="showSection('methodology')">Methodology</a></li>
+                <li><a href="#" onclick="showSection('results')">Results</a></li>
+                <li><a href="#" onclick="showSection('conclusions')">Conclusions</a></li>
+                <li><a href="#" onclick="showSection('discussion')">Discussion</a></li>
+                <li><a href="#" onclick="showSection('references')">References</a></li>
+                <li><a href="#" onclick="showSection('apps')">Apps</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="introduction" class="content-section">
+            <h2>Introduction</h2>
+            <p>Esta Tesis Doctoral se enmarca en el ámbito del análisis de datos aplicado al control de calidad de productos alimentarios y la detección de residuos de líquidos inflamables (ILRs) en escenarios post-incendio. Ambos campos, cruciales para la industria alimentaria y las ciencias forenses, enfrentan desafíos significativos en términos de autenticidad, seguridad del consumidor y eficiencia en las investigaciones forenses. En este trabajo, se proponen metodologías innovadoras que combinan técnicas espectroscópicas avanzadas (FTIR, Vis-NIR y nariz electrónica basada en HS-GC-IMS) con algoritmos de Machine Learning (ML) para optimizar la detección de adulteraciones en productos alimentarios, como zumos y miel, y la identificación de ILRs.</p>
+        
+            <p>En el sector alimentario, la adulteración de productos de alto valor comercial ha crecido, a pesar de las estrictas regulaciones. Este fenómeno afecta tanto la calidad del producto como la salud de los consumidores. En el ámbito forense, la identificación de ILRs en escenarios post-incendio sigue siendo un desafío debido a las bajas concentraciones de los compuestos y la complejidad del análisis tras la extinción del fuego. A lo largo de esta investigación, se ha desarrollado un enfoque que combina técnicas espectroscópicas avanzadas y algoritmos ML, proporcionando una caracterización precisa y rápida de las muestras.</p>
+        
+            <p>El objetivo principal de esta investigación es desarrollar modelos predictivos automatizados que mejoren tanto la seguridad alimentaria como la investigación forense. Para el análisis de adulteraciones, los modelos permiten detectar y cuantificar adulteraciones en zumos y miel. En el contexto forense, los modelos optimizan la detección de ILRs. Estos avances podrían sustituir o complementar los métodos actuales, haciéndolos más accesibles, económicos y eficientes.</p>
+        <div style="height: 100px;"></div>
+        </section>
+        
+        <section id="methodology" class="content-section">
+            <h2>Methodology</h2>
+            <p>We used a variety of analytical techniques including FT-IR, NIRs, and HS-IMS...</p>
+            <img src="assets/images/methodology.jpg" alt="Methodology Image" class="section-image">
+            <video controls>
+                <source src="assets/videos/methodology.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <section id="results" class="content-section">
+            <h2>Results and Discussion</h2>
+            <p>La presente Tesis Doctoral se presenta bajo la modalidad de tesis de Compendio de Publicaciones, y cumple con todos los requisitos establecidos en el Artículo 23 de la regulación UCA/CG06/2012, fechada el 27 de junio de 2012, sobre la organización de estudios de doctorado en la Universidad de Cádiz.</p>
+
+            <p>Conforme a la normativa vigente, todos los documentos originales se adjuntan al final de esta memoria, en los Apéndices I-V. Los permisos editoriales para la reutilización de los trabajos completos en esta Tesis Doctoral, así como la declaración de conformidad de todos los coautores y su renuncia formal a reutilizarlos en otra Tesis, se incluyen en los apéndices correspondientes.</p>
+        
+            <p>Las publicaciones científicas que conforman el compendio son las siguientes:</p>
+            <ul>
+                <li>Calle, J.L.P.; Barea-Sepúlveda, M.; Ruiz-Rodríguez, A.; Álvarez, J.Á.; Ferreiro-González, M.; Palma, M. Rapid Detection and Quantification of Adulterants in Fruit Juices Using Machine Learning Tools and Spectroscopy Data. Sensors 2022, 22, 3852, <a href="https://doi.org/10.3390/s22103852" target="_blank">https://doi.org/10.3390/s22103852</a>.</li>
+                <li>Calle, J.L.P.; Falatová, B.; Aliaño-González, M.J.; Ferreiro-González, M.; Palma, M. Machine Learning Approaches over Ion Mobility Spectra for the Discrimination of Ignitable Liquids Residues from Interfering Substrates. Talanta Open 2022, 6, 100125, <a href="https://doi.org/10.1016/j.talo.2022.100125" target="_blank">https://doi.org/10.1016/j.talo.2022.100125</a>.</li>
+                <li>Calle, J.L.P.; Ferreiro-González, M.; Ruiz-Rodríguez, A.; Fernández, D.; Palma, M. Detection of Adulterations in Fruit Juices Using Machine Learning Methods over FT-IR Spectroscopic Data. Agronomy 2022, 12, 683, <a href="https://doi.org/10.3390/agronomy12030683" target="_blank">https://doi.org/10.3390/agronomy12030683</a>.</li>
+                <li>Calle, J.L.P.; Punta-Sánchez, I.; González-de-Peredo, A.V.; Ruiz-Rodríguez, A.; Ferreiro-González, M.; Palma, M. Rapid and Automated Method for Detecting and Quantifying Adulterations in High-Quality Honey Using Vis-NIRs in Combination with Machine Learning. Foods 2023, 12, 2491, <a href="https://doi.org/10.3390/foods12132491" target="_blank">https://doi.org/10.3390/foods12132491</a>.</li>
+                <li>Calle, J.L.P.; Vázquez-Espinosa, M.; Barea-Sepúlveda, M.; Ruiz-Rodríguez, A.; Ferreiro-González, M.; Palma, M. Novel Method Based on Ion Mobility Spectrometry Combined with Machine Learning for the Discrimination of Fruit Juices. Foods 2023, 12, 2536, <a href="https://doi.org/10.3390/foods12132491" target="_blank">https://doi.org/10.3390/foods12132491</a>.</li>
+                <li>Calle, J.L.P.; Ferreiro-González, M.; Palma, M. Automated Adulteration Quantification in Juice: Methodology based on ion mobility spectrometry and machine learning. Microchemical Journal 2024.</li>
+            </ul>
+        
+            <p>Además, esta memoria se presenta también bajo la modalidad de Doctorado con Mención Internacional, por lo que, siguiendo los requisitos establecidos en el Artículo 34 del Reglamento UCA/CG06/2012 del 27 de junio de 2012 por el que se regula la ordenación de los estudios de doctorado en la Universidad de Cádiz.</p>
+            <div style="height: 100px;"></div>
+        </section>
+        
+        <section id="discussion" class="content-section">
+            <h2>Discussion of Results</h2>
+        
+            <!-- Introducción con el texto -->
+            <p>In this section, a comparative analysis of the PCA results from both ion mobility spectrometry (IMS) and FTIR spectroscopic data will be discussed. The primary objective is to highlight the similarities and differences in the detection of adulterants in fruit juices using both methods. Each plot provides a visual representation of the clustering behavior of the samples, offering insights into the discrimination power of each technique.</p>
+        
+            <!-- PCA IMS y PCA FTIR juntos para comparativa -->
+            <div class="row">
+                <div class="column">
+                    <h3>PCA Analysis: Ion Mobility Spectrometry (IMS)</h3>
+                    <iframe src="assets/html/pca_ims_zumos.html" width="100%" height="450px" frameborder="0" class="graph-iframe"></iframe>
+                </div>
+                <div class="column">
+                    <h3>PCA Analysis: FTIR Spectroscopic Data</h3>
+                    <iframe src="assets/html/pca_ftir_zumos.html" width="100%" height="450px" frameborder="0" class="graph-iframe"></iframe>
+                </div>
+            </div>
+        
+            <p>The above plots illustrate the principal component analysis (PCA) for both IMS and FTIR data. As can be observed, both methods allow for a clear distinction between the different groups of fruit juices, albeit with slight variations in the sample clustering. These differences can be attributed to the distinct sensing mechanisms of each technique, as IMS captures ion mobility while FTIR focuses on molecular vibrations.</p>
+        
+            <!-- Espectros FTIR y otros espectros juntos -->
+            <div class="row">
+                <div class="column">
+                    <h3>FTIR Spectrum Analysis</h3>
+                    <iframe src="assets/html/Espectro_FTIR_Zumos.html" width="100%" height="450px" frameborder="0" class="graph-iframe"></iframe>
+                </div>
+                <!-- Puedes añadir aquí el otro espectro -->
+                <div class="column">
+                    <h3>Another Spectral Analysis</h3>
+                    <iframe src="assets/html/Espectro_ims_Zumos.html" width="100%" height="450px" frameborder="0" class="graph-iframe"></iframe>
+                </div>
+            </div>
+        
+            <p>The spectral data provided by FTIR offers a detailed view of the molecular fingerprint of the samples. By comparing the spectra, it is possible to identify specific regions that are more sensitive to the presence of adulterants. This capability complements the PCA analysis, further strengthening the detection process.</p>
+            <div style="height: 100px;"></div>
+        </section>
+        
+
+        <section id="conclusions" class="content-section">
+            <h2>Conclusions</h2>
+            <p>Here we summarize the key findings of our research...</p>
+        </section>
+
+        <section id="references" class="content-section">
+            <h2>References</h2>
+            <ul>
+                <li>Author, A. (Year). Title of the paper. Journal Name.</li>
+                <li>Author, B. (Year). Title of another paper. Another Journal Name.</li>
+            </ul>
+        </section>
+
+        <section id="apps" class="content-section">
+            <h2>Applications</h2>
+            <p>Explore our interactive Shiny applications below:</p>
+
+            <!-- Application 1 -->
+            <div class="app-container">
+                <h3>Application 1 Title</h3>
+                <p>Description of Application 1. This application provides insights into...</p>
+                <iframe src="https://joseluispcalle.shinyapps.io/Almendralejo_APP/" width="100%" height="600px" frameborder="0" class="app-iframe"></iframe>
+            </div>
+
+            <!-- Application 2 -->
+            <div class="app-container">
+                <h3>Application 2 Title</h3>
+                <p>Description of Application 2. This app helps with...</p>
+                <iframe src="https://joseluisperezcalle.shinyapps.io/App_Zumos_IMS/" width="100%" height="600px" frameborder="0" class="app-iframe"></iframe>
+            </div>
+
+            <!-- Application 3 -->
+            <div class="app-container">
+                <h3>Application 3 Title</h3>
+                <p>Description of Application 3. This tool is designed to...</p>
+                <iframe src="https://your-shiny-app3.shinyapps.io/your-app" width="100%" height="600px" frameborder="0" class="app-iframe"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Contact: <a href="mailto:joseluis.perezcalle@gm.uca.es">joseluis.perezcalle@gm.uca.es</a></p>
+    </footer>
+<script src="//code.tidio.co/cng4k6b9bj59mi9qdlt33z7c7aflhukp.js" async></script>
+</body>
+</html>
