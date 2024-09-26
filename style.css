@@ -15,6 +15,28 @@ header {
     padding: 0.1rem 1; /* Reduced padding to make header smaller */
 }
 
+/* Secciones con delay para el orden de aparición */
+.delay-1 { transition-delay: 0.3s; }
+.delay-2 { transition-delay: 0.6s; }
+.delay-3 { transition-delay: 0.9s; }
+.delay-4 { transition-delay: 1.2s; }
+button {
+    background-color: #007aff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #005bb5;
+}
+
+
+
 header img.header-image {
     width: 100%;
     height: auto;
@@ -107,3 +129,72 @@ footer {
 .app-iframe {
     border: none;
 }
+        /* Efecto de animación al hacer scroll */
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(20px);
+    visibility: hidden;
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-section.is-visible {
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+}
+
+        /* Efectos adicionales con íconos */
+.dynamic-icon {
+    font-size: 2rem;
+    color: #007aff;
+    transition: transform 0.3s ease;
+}
+
+.dynamic-icon:hover {
+    transform: rotate(20deg);
+}
+/* Estilo de las imágenes y videos */
+video, img.section-image {
+    max-width: 100%;
+    display: block;
+    margin: 2rem 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+ul li:before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #007aff;
+    font-size: 1.5em;
+}
+
+header nav ul li a:hover {
+    color: #007aff;
+    text-decoration: underline;
+}
+
+p, li {
+    margin: 20px 0;
+    color: #555;
+    font-size: 0.9rem;
+    text-align: justify;
+}
+.center-text {
+    text-align: center;
+    color: #fff;
+
+}
+iframe {
+    border: 2px solid #ccc; /* Bordes suaves */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    width: 100%; /* Adaptable al contenedor */
+    max-width: 100%; /* No excede el tamaño del contenedor */
+    height: 600px; /* Aumenta la altura para que no se corte el contenido */
+    overflow: auto; /* Scroll interno si es necesario */
+    margin: 20px 0; /* Esp
+}
+
+
+  

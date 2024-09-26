@@ -15,18 +15,16 @@
         <nav>
             <ul>
                 <li><a href="#" onclick="showSection('introduction')">Introduction</a></li>
-                <li><a href="#" onclick="showSection('methodology')">Methodology</a></li>
                 <li><a href="#" onclick="showSection('results')">Results</a></li>
                 <li><a href="#" onclick="showSection('conclusions')">Conclusions</a></li>
                 <li><a href="#" onclick="showSection('discussion')">Discussion</a></li>
-                <li><a href="#" onclick="showSection('references')">References</a></li>
                 <li><a href="#" onclick="showSection('apps')">Apps</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="introduction" class="content-section">
+        <section id="introduction" class="content-section fade-in-section">
             <h2>Introduction</h2>
             <p>Esta Tesis Doctoral se enmarca en el ámbito del análisis de datos aplicado al control de calidad de productos alimentarios y la detección de residuos de líquidos inflamables (ILRs) en escenarios post-incendio. Ambos campos, cruciales para la industria alimentaria y las ciencias forenses, enfrentan desafíos significativos en términos de autenticidad, seguridad del consumidor y eficiencia en las investigaciones forenses. En este trabajo, se proponen metodologías innovadoras que combinan técnicas espectroscópicas avanzadas (FTIR, Vis-NIR y nariz electrónica basada en HS-GC-IMS) con algoritmos de Machine Learning (ML) para optimizar la detección de adulteraciones en productos alimentarios, como zumos y miel, y la identificación de ILRs.</p>
         
@@ -35,18 +33,8 @@
             <p>El objetivo principal de esta investigación es desarrollar modelos predictivos automatizados que mejoren tanto la seguridad alimentaria como la investigación forense. Para el análisis de adulteraciones, los modelos permiten detectar y cuantificar adulteraciones en zumos y miel. En el contexto forense, los modelos optimizan la detección de ILRs. Estos avances podrían sustituir o complementar los métodos actuales, haciéndolos más accesibles, económicos y eficientes.</p>
         <div style="height: 100px;"></div>
         </section>
-        
-        <section id="methodology" class="content-section">
-            <h2>Methodology</h2>
-            <p>We used a variety of analytical techniques including FT-IR, NIRs, and HS-IMS...</p>
-            <img src="assets/images/methodology.jpg" alt="Methodology Image" class="section-image">
-            <video controls>
-                <source src="assets/videos/methodology.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </section>
 
-        <section id="results" class="content-section">
+        <section id="results" class="content-section fade-in-section">
             <h2>Results and Discussion</h2>
             <p>La presente Tesis Doctoral se presenta bajo la modalidad de tesis de Compendio de Publicaciones, y cumple con todos los requisitos establecidos en el Artículo 23 de la regulación UCA/CG06/2012, fechada el 27 de junio de 2012, sobre la organización de estudios de doctorado en la Universidad de Cádiz.</p>
 
@@ -65,8 +53,9 @@
             <p>Además, esta memoria se presenta también bajo la modalidad de Doctorado con Mención Internacional, por lo que, siguiendo los requisitos establecidos en el Artículo 34 del Reglamento UCA/CG06/2012 del 27 de junio de 2012 por el que se regula la ordenación de los estudios de doctorado en la Universidad de Cádiz.</p>
             <div style="height: 100px;"></div>
         </section>
+
         
-        <section id="discussion" class="content-section">
+        <section id="discussion" class="content-section fade-in-section">
             <h2>Discussion of Results</h2>
         
             <!-- Introducción con el texto -->
@@ -76,7 +65,7 @@
             <div class="row">
                 <div class="column">
                     <h3>PCA Analysis: Ion Mobility Spectrometry (IMS)</h3>
-                    <iframe src="assets/html/pca_ims_zumos.html" width="100%" height="450px" frameborder="0" class="graph-iframe"></iframe>
+                    <iframe src="assets/html/pca_ims_zumos.html"  allow="fullscreen" frameborder="0" class="graph-iframe"></iframe>
                 </div>
                 <div class="column">
                     <h3>PCA Analysis: FTIR Spectroscopic Data</h3>
@@ -102,21 +91,55 @@
             <p>The spectral data provided by FTIR offers a detailed view of the molecular fingerprint of the samples. By comparing the spectra, it is possible to identify specific regions that are more sensitive to the presence of adulterants. This capability complements the PCA analysis, further strengthening the detection process.</p>
             <div style="height: 100px;"></div>
         </section>
-        
 
-        <section id="conclusions" class="content-section">
-            <h2>Conclusions</h2>
-            <p>Here we summarize the key findings of our research...</p>
-        </section>
 
-        <section id="references" class="content-section">
-            <h2>References</h2>
+        <section id="conclusions" class="content-section fade-in-section">
+            <h2>Conclusions<i class="fas fa-check-circle dynamic-icon"></i></h2>
+            <img src="assets/images/header_zumos.jpg" alt="Juice Analysis" style="width: 100%; max-height: 200px; object-fit: cover; margin: 20px 0;">
+
+            <p>This Doctoral Thesis aimed to demonstrate the feasibility of different spectroscopic techniques (Vis-NIR, FTIR and eNose system based on IMS or sensor arrays) combined with ML algorithms, as effective tools for the rapid characterization of samples in the food and forensic fields. The integration of these methodologies has led to conclusions organized into three main sections based on the type of sample analyzed. </p>
+            <p><strong> Based on the analysis of the results from the following publications on the detection and quantification of juice-to-juice adulterations:</strong></p>
+            <ol>
+                <li>Calle, J.L.P.; Barea-Sepúlveda, M.; Ruiz-Rodríguez, A.; Álvarez, J.Á.; Ferreiro-González, M.; Palma, M. Rapid Detection and Quantification of Adulterants in Fruit Juices Using Machine Learning Tools and Spectroscopy Data. Sensors 2022, 22, 3852, <a href="https://doi.org/10.3390/s22103852" target="_blank">https://doi.org/10.3390/s22103852</a>.</li>
+                <li>Calle, J.L.P.; Ferreiro-González, M.; Ruiz-Rodríguez, A.; Fernández, D.; Palma, M. Detection of Adulterations in Fruit Juices Using Machine Learning Methods over FT-IR Spectroscopic Data. Agronomy 2022, 12, 683, <a href="https://doi.org/10.3390/agronomy12030683" target="_blank">https://doi.org/10.3390/agronomy12030683</a>.</li>
+                <li>Calle, J.L.P.; Vázquez-Espinosa, M.; Barea-Sepúlveda, M.; Ruiz-Rodríguez, A.; Ferreiro-González, M.; Palma, M. Novel Method Based on Ion Mobility Spectrometry Combined with Machine Learning for the Discrimination of Fruit Juices. Foods 2023, 12, 2536, <a href="https://doi.org/10.3390/foods12132491" target="_blank">https://doi.org/10.3390/foods12132491</a>.</li>
+                <li>Calle, J.L.P.; Ferreiro-González, M.; Palma, M. Automated Adulteration Quantification in Juice: Methodology based on ion mobility spectrometry and machine learning. Microchemical Journal 2024.</li>
+            </ol>
+            <p><strong>It can be concluded that:</strong></p>
             <ul>
-                <li>Author, A. (Year). Title of the paper. Journal Name.</li>
-                <li>Author, B. (Year). Title of another paper. Another Journal Name.</li>
+                <li> The spectroscopic techniques employed (Vis-NIR, FTIR, and IMS), when combined with ML models, demonstrate a high capacity for identifying and quantifying adulterants in fruit juices such as pineapple, apple, and orange, through the addition of grape juice as the adulterant.</a>.</li>
+                <li> For the detection of adulteration, the classification models (SVM, RF, and LDA) were applied to spectroscopic data achieving accuracy exceeding 95% across all techniques used. The best results, with 100% correct classification, were obtained using the SVM and LDA models applied to FTIR data.</a>.</li>
+                <li> For the quantification of adulteration percentages, the regression models evaluated (SVR, PLS, and RF) indicate that FTIR is the most robust technique. The best results were achieved using the SVR model, with an R² of 0.995 and an RMSE of 1.243.</a>.</li>
             </ul>
-        </section>
+            <div style="height: 20px;"></div>
+            <img src="assets/images/header_mieles.jpg" alt="Juice Analysis" style="width: 100%; max-height: 200px; object-fit: cover; margin: 20px 0;">
 
+            <p><strong>Based on the analysis of the results from the following publication on the detection and quantification of honey-to-honey adulteration:</strong></p>
+            <ol>
+                <li>Calle, J.L.P.; Punta-Sánchez, I.; González-de-Peredo, A.V.; Ruiz-Rodríguez, A.; Ferreiro-González, M.; Palma, M. Rapid and Automated Method for Detecting and Quantifying Adulterations in High-Quality Honey Using Vis-NIRs in Combination with Machine Learning. Foods 2023, 12, 2491, <a href="https://doi.org/10.3390/foods12132491" target="_blank">https://doi.org/10.3390/foods12132491</a>.</li>
+            </ol>
+            <p></strong>It can be concluded that:</strong></p>
+            <ul>
+                <li>The Vis-NIR spectroscopic technique, combined with ML algorithms, proved effective in detecting and quantifying adulterations in monofloral honeys (such as orange blossom or sunflower), adulterated with multifloral honey. Non-linear classification models, such as SVM and RF, achieved 100% accuracy in identifying adulterants, outperforming linear models like LDA. Regarding the quantification of adulteration percentages, the SVR model demonstrated the highest performance, with a R² of 0.991 and an RMSE of 1.894. This confirms the model's strong ability to predict the percentage of adulterant present in the honey samples.</a>.</li>
+            </ul>
+            <div style="height: 20px;"></div>
+
+            <img src="assets/images/header_incendios.jpg" alt="Juice Analysis" style="width: 100%; max-height: 200px; object-fit: cover; margin: 20px 0;">
+
+        <p><strong> Bsed on the analysis of the results from the following publications on the detection and quantification of juice-to-juice adulterations:</strong></p>
+        <ol>
+            <li>Calle, J.L.P.; Falatová, B.; Aliaño-González, M.J.; Ferreiro-González, M.; Palma, M. Machine Learning Approaches over Ion Mobility Spectra for the Discrimination of Ignitable Liquids Residues from Interfering Substrates. Talanta Open 2022, 6, 100125, <a href="https://doi.org/10.1016/j.talo.2022.100125" target="_blank">https://doi.org/10.1016/j.talo.2022.100125</a>.</li>
+            <li>2-	Smart portable electronic nose system in combination with machine learning algorithms for the intelligence discrimination of fire debris. Presented in Chapter 4.3.</li>
+        </ol>
+        <p><strong>It can be concluded that:</strong></p>
+        <ul>
+            <li> Electronic noses based on both IMS and sensor arrays have proven effective in detecting the presence of ILRs in post-fire scenarios, even in the presence of interfering substrates. Machine learning models (SVM, RF, and LDA) applied to the obtained data enabled accurate classification of the samples based on the presence or absence of ILRs, with RF and SVM achieving 100% accuracy in certain configurations of both techniques.</a>.</li>
+            <li> The electronic nose based on IMS demonstrated superior performance in identifying specific types of ILRs, achieving 100% accuracy when coupled with the RF model. However, the sensor array-based system, although slightly lower in accuracy, offers practical advantages such as lower cost, simplicity, portability, and reduced energy consumption, making it more attractive for in situ forensic applications.</a>.</li>
+            <li> Variable selection using the Boruta algorithm improved the performance of the models in the sensor array-based system, with particularly notable improvements in the RF and LDA models. This highlights the potential of variable reduction techniques while also identifying sensors that are not useful for ILRs detection and identification, allowing for further system optimization.</a>.</li>
+        </ul>
+        <div style="height: 100px;"></div>
+
+    </section>
         <section id="apps" class="content-section">
             <h2>Applications</h2>
             <p>Explore our interactive Shiny applications below:</p>
@@ -145,8 +168,28 @@
     </main>
 
     <footer>
-        <p>Contact: <a href="mailto:joseluis.perezcalle@gm.uca.es">joseluis.perezcalle@gm.uca.es</a></p>
+        <p class="center-text">Contact: <a href="mailto:joseluis.perezcalle@gm.uca.es">joseluis.perezcalle@gm.uca.es</a></p>
     </footer>
 <script src="//code.tidio.co/cng4k6b9bj59mi9qdlt33z7c7aflhukp.js" async></script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const sections = document.querySelectorAll('.fade-in-section');
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+
+        sections.forEach(section => {
+            observer.observe(section);
+        });
+    });
+</script>
 </body>
 </html>
