@@ -1,3 +1,133 @@
+/* Estilo del menú de navegación */
+#navMenu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #333; /* Fondo oscuro para que haga juego */
+    padding: 10px 0;
+}
+
+#navMenu li {
+    margin: 0 15px;
+    position: relative; /* Asegura que no haya pseudo-elementos */
+}
+
+#navMenu li::before, #navMenu li::after {
+    content: none; /* Elimina cualquier pseudo-elemento anterior */
+}
+
+
+.toggle-button {
+    display: inline-block; /* Muestra el botón en línea */
+    padding: 5px 10px; /* Espacio interno del botón */
+    font-size: 12px; /* Tamaño de la fuente del botón */
+    color: white; /* Color del texto del botón */
+    background-color: #007BFF; /* Color de fondo del botón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor a mano al pasar por encima */
+    margin-bottom: 10px; /* Espacio entre el botón y el bloque */
+    transition: background-color 0.3s; /* Efecto suave para el cambio de color */
+}
+
+.toggle-button:hover {
+    background-color: #0056b3; /* Color de fondo al pasar el mouse */
+}
+
+.graph-section {
+    display: none; /* Oculta el bloque de gráficos por defecto */
+    margin-top: 10px; /* Espacio superior para el bloque desplegado */
+}
+
+/* Estilo específico para la sección de gráficos */
+/* Asegura que el contenedor de gráficos ocupe todo el ancho */
+/* Contenedor de gráficos ocupando más del 100% y centrado */
+#graphSection {
+    display: flex; 
+    flex-direction: column; /* Alinea las columnas en una fila */
+    justify-content: space-between; /* Espacio igual entre las columnas */
+    position: relative; /* Necesario para usar transform */
+    left: 50%; /* Mueve el contenedor a la derecha en un 50% de su tamaño original */
+    transform: translateX(-50%); /* Desplaza el contenedor hacia la izquierda en un 50% de su tamaño total */
+    width: 100%; /* Ocupar el 190% del ancho de la pantalla */
+    margin: 0; /* Elimina márgenes */
+    padding: 0; /* Evita padding adicional */
+    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño */
+}
+
+#graphSection .column {
+    width: 100%; /* Cada columna ocupará casi la mitad del ancho */
+    margin-bottom: 0px; /* Espacio entre los gráficos verticalmente */
+}
+#graphSection .graph-iframe {
+    width: 100%;
+    border: none;   
+    height: 430px; /* Cambia la altura del iframe aquí, por ejemplo, a 600px */
+
+}
+
+
+#graphSection h3 {
+    text-align: center; /* Alinea los títulos al centro */
+    font-family: 'Arial', sans-serif; /* Fuente elegante */
+}
+
+/* Estilo específico para la sección de gráficos */
+/* Asegura que el contenedor de gráficos ocupe todo el ancho */
+/* Contenedor de gráficos ocupando más del 100% y centrado */
+#graphSection2 {
+    display: flex; /* Alinea las columnas en una fila */
+    justify-content: space-between; /* Espacio igual entre las columnas */
+    position: relative; /* Necesario para usar transform */
+    left: 50%; /* Mueve el contenedor a la derecha en un 50% de su tamaño original */
+    transform: translateX(-50%); /* Desplaza el contenedor hacia la izquierda en un 50% de su tamaño total */
+    width: 150%; /* Ocupar el 190% del ancho de la pantalla */
+    margin: 0; /* Elimina márgenes */
+    padding: 0; /* Evita padding adicional */
+    box-sizing: border-box; /* Asegura que el padding no afecte el tamaño */
+}
+
+#graphSection2 .column {
+    width: 49%; /* Cada columna ocupará casi la mitad del ancho */
+    margin-bottom: 20px; /* Espacio entre los gráficos verticalmente */
+}
+
+#graphSection2 .graph-iframe {
+    width: 110%;
+    aspect-ratio: 4 / 3; /* Mantiene una proporción de 4:3 */
+    border: none;
+}
+
+
+#graphSection2 h3 {
+    text-align: center; /* Alinea los títulos al centro */
+    font-family: 'Arial', sans-serif; /* Fuente elegante */
+}
+
+
+
+
+
+#navMenu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px;
+}
+
+#navMenu a:hover {
+    background-color: #3498db; /* Azul elegante que resalte en el fondo oscuro */
+    color: white;
+}
+
+
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -87,8 +217,9 @@ main {
     display: block;
 }
 
-h1, h2, h3 {
-    color: #333;
+h1, h2, h3, h4 {
+    color: #2c3e50;
+    text-align: center;
 }
 
 video {
@@ -103,10 +234,6 @@ img.section-image {
     margin: 1rem 0;
 }
 
-.graph-iframe {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
 
 footer {
     background: #333;
@@ -146,7 +273,7 @@ footer {
         /* Efectos adicionales con íconos */
 .dynamic-icon {
     font-size: 2rem;
-    color: #007aff;
+    color: #2c3e50;
     transition: transform 0.3s ease;
 }
 
@@ -161,13 +288,85 @@ video, img.section-image {
     border-radius: 10px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
+
 ul li:before {
     content: '•';
     position: absolute;
-    left: 0;
+    left: -30px;
     color: #007aff;
-    font-size: 1.5em;
+    font-size: 1.1rem;
 }
+
+
+ul li {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+ul li:before {
+    content: '•';
+    position: absolute;
+    left: -20px;
+    color: #007aff;
+    font-size: 1.1rem;
+}
+ol {
+    padding-left: 20px; /* Puedes ajustar este valor si quieres más o menos espacio */
+    list-style-type: none; /* Esto elimina los números predeterminados */
+}
+
+ol li {
+    margin-bottom: 10px;
+    position: relative;
+}
+
+ol li:before {
+    content: counter(item) '. '; /* Agrega el número antes de cada elemento */
+    counter-increment: item; /* Aumenta el contador para el siguiente elemento */
+    position: absolute;
+    left: -30px; /* Ajusta el espacio a la izquierda como prefieras */
+    color: #007aff; /* El mismo color que usaste para el marcador en <ul> */
+    font-size: 1.1rem; /* Tamaño del número */
+}
+
+/* Asegúrate de reiniciar el contador al principio de la lista */
+ol {
+    counter-reset: item; /* Resetea el contador al iniciar la lista */
+}
+
+/* Efecto de animación al hacer scroll */
+.fade-in-section {
+    opacity: 0;
+    transform: translateY(20px);
+    visibility: hidden;
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-section.is-visible {
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+}
+
+/* Efectos adicionales con íconos */
+.dynamic-icon {
+    font-size: 2rem;
+    color: #2c3e50;
+    transition: transform 0.3s ease;
+}
+
+.dynamic-icon:hover {
+    transform: rotate(20deg);
+}
+
+/* Sección de columnas */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
 
 header nav ul li a:hover {
     color: #007aff;
@@ -189,12 +388,10 @@ iframe {
     border: 2px solid #ccc; /* Bordes suaves */
     border-radius: 10px; /* Bordes redondeados */
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    width: 100%; /* Adaptable al contenedor */
+    width: 120%; /* Adaptable al contenedor */
     max-width: 100%; /* No excede el tamaño del contenedor */
     height: 600px; /* Aumenta la altura para que no se corte el contenido */
-    overflow: auto; /* Scroll interno si es necesario */
-    margin: 20px 0; /* Esp
+    overflow: hidden; /* Scroll interno si es necesario */
+    margin: 20px 0; /* Esp*/
 }
 
-
-  

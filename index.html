@@ -7,17 +7,20 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     <script src="script.js" defer></script>
+    <!-- Iconos para mayor dinamismo -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 </head>
 <body>
     <header>
         <img src="assets/images/header.jpg" alt="Header Image" class="header-image">
         <h1> Tesis Doctoral: Herramientas analíticas basadas en la aplicación de machine learning sobre datos espectroscópicos</h1>
         <nav>
-            <ul>
+            <ul id="navMenu">
                 <li><a href="#" onclick="showSection('introduction')">Introduction</a></li>
                 <li><a href="#" onclick="showSection('results')">Results</a></li>
-                <li><a href="#" onclick="showSection('conclusions')">Conclusions</a></li>
                 <li><a href="#" onclick="showSection('discussion')">Discussion</a></li>
+                <li><a href="#" onclick="showSection('conclusions')">Conclusions</a></li>
                 <li><a href="#" onclick="showSection('apps')">Apps</a></li>
             </ul>
         </nav>
@@ -35,7 +38,7 @@
         </section>
 
         <section id="results" class="content-section fade-in-section">
-            <h2>Results and Discussion</h2>
+            <h2>Results and Discussion <i class="fas fa-chart-bar dynamic-icon"> </i></h2>
             <p>La presente Tesis Doctoral se presenta bajo la modalidad de tesis de Compendio de Publicaciones, y cumple con todos los requisitos establecidos en el Artículo 23 de la regulación UCA/CG06/2012, fechada el 27 de junio de 2012, sobre la organización de estudios de doctorado en la Universidad de Cádiz.</p>
 
             <p>Conforme a la normativa vigente, todos los documentos originales se adjuntan al final de esta memoria, en los Apéndices I-V. Los permisos editoriales para la reutilización de los trabajos completos en esta Tesis Doctoral, así como la declaración de conformidad de todos los coautores y su renuncia formal a reutilizarlos en otra Tesis, se incluyen en los apéndices correspondientes.</p>
@@ -56,39 +59,75 @@
 
         
         <section id="discussion" class="content-section fade-in-section">
-            <h2>Discussion of Results</h2>
-        
+            <h1>Global Discussion<i class="fas fa-comments dynamic-icon"></i></h1>
+            <div style="font-family: Arial, sans-serif; line-height: 1.6; color: #333;">
+                <p>
+                    The global discussion of the results presented in this Doctoral Thesis aims to integrate and critically analyze the findings obtained throughout the different studies that make up the compendium. In this section, the relationship between the different approaches and techniques used in the investigations will be addressed, highlighting the connections among the studies carried out.                </p>
+                
+                <p>
+                  The comparative analysis of the results allows for evaluating the effectiveness of the ML tools applied in combination with techniques such as Vis-NIR and FTIR, as well as with electronic nose systems based on sensor arrays and IMS. Additionally, the impact of the generated predictive models is discussed, both in terms of performance and their potential to improve the detection processes for food adulterations and accelerants in fire samples.
+                </p>
+                
+                <p>
+                  Furthermore, a critical reflection on the limitations of the methods employed is provided, along with potential improvements and practical implications derived from the results.
+                </p>
+                
+                <h3 style="color: #2980b9;">Chapter Organization</h3>
+                <p>
+                    The organization of the results is structured into three thematic chapters, which group together investigations related to the authentication of juices and honeys, as well as the detection of ILRs in fire debris. Each chapter addresses a specific issue through the application of analytical techniques and the integration of ML tools, with the aim of developing rapid, objective, and automated methods.
+                  </p>
+                  
+                  <h4 style="color: #3498db;">Chapter 4.1: Detection and Quantification of Adulterations in Juices</h4>
+                  <p>
+                    This chapter compiles studies focused on the identification and quantification of adulterations in fruit juices, using various spectroscopic techniques and ML tools. The included articles explore the feasibility of applying FT-IR, Vis-NIR, and IMS in combination with ML algorithms to characterize samples and detect adulterants in a rapid and automated manner. In this context, various analytical techniques have been explored to obtain robust predictive models. The articles that comprise this chapter are as follows:
+                  </p>
+                  
+                  <ul>
+                    <li>Article i: Rapid Detection and Quantification of Adulterants in Fruit Juices Using Machine Learning Tools and Spectroscopy Data (Sensors 2022).</li>
+                    <li>Article ii: Detection of Adulterations in Fruit Juices Using Machine Learning Methods over FT-IR Spectroscopic Data (Agronomy 2022).</li>
+                    <li>Article iii: Novel Method Based on Ion Mobility Spectrometry Combined with Machine Learning for the Discrimination of Fruit Juices (Foods 2023).</li>
+                    <li>Article iv: Automated Adulteration Quantification in Juice: Methodology Based on Ion Mobility Spectrometry and Machine Learning (Microchemical Journal 2024).</li>
+                  </ul>
+              </div>
             <!-- Introducción con el texto -->
             <p>In this section, a comparative analysis of the PCA results from both ion mobility spectrometry (IMS) and FTIR spectroscopic data will be discussed. The primary objective is to highlight the similarities and differences in the detection of adulterants in fruit juices using both methods. Each plot provides a visual representation of the clustering behavior of the samples, offering insights into the discrimination power of each technique.</p>
         
             <!-- PCA IMS y PCA FTIR juntos para comparativa -->
-            <div class="row">
+            <div id="graphSection2" class="row">
                 <div class="column">
                     <h3>PCA Analysis: Ion Mobility Spectrometry (IMS)</h3>
-                    <iframe src="assets/html/pca_ims_zumos.html"  allow="fullscreen" frameborder="0" class="graph-iframe"></iframe>
+                    <iframe src="assets/html/pca_ims_zumos.html"  width="100%" height="450px" frameborder="0" class="graph-iframe"></iframe>
                 </div>
                 <div class="column">
                     <h3>PCA Analysis: FTIR Spectroscopic Data</h3>
                     <iframe src="assets/html/pca_ftir_zumos.html" width="100%" height="450px" frameborder="0" class="graph-iframe"></iframe>
                 </div>
             </div>
+            <div class="column">
+                <h3>NIR PCA: NIR Spectroscopic Data</h3>
+                <iframe src="assets/html/pca_nirs_zumos.html" width="80%" height="300px" frameborder="0" class="graph-iframe"></iframe>
+            </div>
         
             <p>The above plots illustrate the principal component analysis (PCA) for both IMS and FTIR data. As can be observed, both methods allow for a clear distinction between the different groups of fruit juices, albeit with slight variations in the sample clustering. These differences can be attributed to the distinct sensing mechanisms of each technique, as IMS captures ion mobility while FTIR focuses on molecular vibrations.</p>
         
             <!-- Espectros FTIR y otros espectros juntos -->
-            <div class="row">
+            <h3>Spectrums</h3>
+            <p>The spectral data provided by FTIR offers a detailed view of the molecular fingerprint of the samples. By comparing the spectra, it is possible to identify specific regions that are more sensitive to the presence of adulterants. This capability complements the PCA analysis, further strengthening the detection process.</p>
+            <div class="toggle-button" onclick="toggleGraphs()">Mostrar Gráficos</div>
+            <div class="graph-section" id="graphSection">
                 <div class="column">
-                    <h3>FTIR Spectrum Analysis</h3>
-                    <iframe src="assets/html/Espectro_FTIR_Zumos.html" width="100%" height="450px" frameborder="0" class="graph-iframe"></iframe>
+                    <h3>FTIR Spectra</h3>
+                    <iframe src="assets/html/Espectro_FTIR_Zumos.html" width="110%" height="600px" frameborder="0" class="graph-iframe" scrolling="yes"></iframe>
                 </div>
-                <!-- Puedes añadir aquí el otro espectro -->
                 <div class="column">
-                    <h3>Another Spectral Analysis</h3>
-                    <iframe src="assets/html/Espectro_ims_Zumos.html" width="100%" height="450px" frameborder="0" class="graph-iframe"></iframe>
+                    <h3>IMSS Spectra</h3>
+                    <iframe src="assets/html/Espectro_ims_Zumos.html" width="110%" height="600px" frameborder="0" class="graph-iframe" scrolling="yes"></iframe>
+                </div>
+                <div class="column">
+                    <h3>NIR Spectra</h3>
+                    <iframe src="assets/html/Espectro_nirs_Zumos.html" width="110%" height="600px" frameborder="0" class="graph-iframe" scrolling="yes"></iframe>
                 </div>
             </div>
-        
-            <p>The spectral data provided by FTIR offers a detailed view of the molecular fingerprint of the samples. By comparing the spectra, it is possible to identify specific regions that are more sensitive to the presence of adulterants. This capability complements the PCA analysis, further strengthening the detection process.</p>
             <div style="height: 100px;"></div>
         </section>
 
@@ -141,7 +180,7 @@
 
     </section>
         <section id="apps" class="content-section">
-            <h2>Applications</h2>
+            <h2>Applications<i class="fas fa-laptop-code dynamic-icon"></i></h2>
             <p>Explore our interactive Shiny applications below:</p>
 
             <!-- Application 1 -->
