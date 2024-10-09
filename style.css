@@ -19,6 +19,24 @@
 }
 
 
+
+.custom-container {
+    display: flex; /* Usar flexbox para alinear horizontalmente */
+    align-items: flex-start; /* Alinear elementos en la parte superior */
+    justify-content: center; /* Centrar el contenido */
+    margin: 20px -15% auto; /* Margen negativo a los lados para centrar */
+    width: 130%; /* Ancho del contenedor */
+    max-width: 1200px; /* Ancho máximo para el contenedor */
+}
+.column {
+    flex: 1; /* Cada columna tomará el mismo espacio */
+    margin: 10px; /* Espaciado entre columnas */
+}
+.column iframe {
+    width: 120%; /* Asegurarse de que el iframe ocupe todo el ancho de la columna */
+    height: 400px; /* Altura del iframe */
+    border: none; /* Sin borde */
+}
 .toggle-button {
     display: inline-block; /* Muestra el botón en línea */
     padding: 5px 10px; /* Espacio interno del botón */
@@ -51,7 +69,7 @@
     position: relative; /* Necesario para usar transform */
     left: 50%; /* Mueve el contenedor a la derecha en un 50% de su tamaño original */
     transform: translateX(-50%); /* Desplaza el contenedor hacia la izquierda en un 50% de su tamaño total */
-    width: 100%; /* Ocupar el 190% del ancho de la pantalla */
+    width: 120%; /* Ocupar el 190% del ancho de la pantalla */
     margin: 0; /* Elimina márgenes */
     padding: 0; /* Evita padding adicional */
     box-sizing: border-box; /* Asegura que el padding no afecte el tamaño */
@@ -67,7 +85,10 @@
     height: 430px; /* Cambia la altura del iframe aquí, por ejemplo, a 600px */
 
 }
-
+.graph-iframe {
+    width: 120%;
+    height: 430px; /* Ajusta el valor según lo que necesites */
+}
 
 #graphSection h3 {
     text-align: center; /* Alinea los títulos al centro */
@@ -81,9 +102,7 @@
     display: flex; /* Alinea las columnas en una fila */
     justify-content: space-between; /* Espacio igual entre las columnas */
     position: relative; /* Necesario para usar transform */
-    left: 50%; /* Mueve el contenedor a la derecha en un 50% de su tamaño original */
-    transform: translateX(-50%); /* Desplaza el contenedor hacia la izquierda en un 50% de su tamaño total */
-    width: 150%; /* Ocupar el 190% del ancho de la pantalla */
+    width: 200%; /* Ocupar el 190% del ancho de la pantalla */
     margin: 0; /* Elimina márgenes */
     padding: 0; /* Evita padding adicional */
     box-sizing: border-box; /* Asegura que el padding no afecte el tamaño */
@@ -95,7 +114,7 @@
 }
 
 #graphSection2 .graph-iframe {
-    width: 110%;
+    width: 100%;
     aspect-ratio: 4 / 3; /* Mantiene una proporción de 4:3 */
     border: none;
 }
@@ -217,10 +236,27 @@ main {
     display: block;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3 {
     color: #2c3e50;
     text-align: center;
 }
+h4 {
+    color: #2c3e50; /* Celeste oscuro */
+    text-align: left; /* Alineado a la izquierda */
+    font-style: italic; /* Cursiva */
+}
+h5 {
+    font-family: 'Arial', sans-serif; /* Fuente del título */
+    font-size: 14px; /* Tamaño de la fuente */
+    font-weight: bold; /* Negrita para resaltar */
+    color: #8daccc; /* Color del texto */
+    margin-bottom: 1px; /* Muy poco espacio debajo del título */
+}
+
+h5 + p {
+    margin-top: 1px; /* Espacio mínimo entre el título y el párrafo */
+}
+
 
 video {
     max-width: 100%;
@@ -289,27 +325,27 @@ video, img.section-image {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
-ul li:before {
-    content: '•';
-    position: absolute;
-    left: -30px;
-    color: #007aff;
-    font-size: 1.1rem;
+ul {
+    list-style: none; /* Elimina el estilo de lista predeterminado */
+    padding-left: 0; /* Elimina el padding izquierdo */
 }
-
 
 ul li {
-    margin-bottom: 10px;
-    position: relative;
+    margin-bottom: 10px; /* Espaciado entre los elementos de la lista */
+    position: relative; /* Necesario para el pseudo-elemento :before */
+    padding-left: 40px; /* Aumenta la sangría a la izquierda para el texto */
 }
 
 ul li:before {
-    content: '•';
-    position: absolute;
-    left: -20px;
-    color: #007aff;
-    font-size: 1.1rem;
+    content: '•'; /* El punto de la lista */
+    position: absolute; /* Posiciona el punto en relación al elemento li */
+    left: 10px; /* Ajusta la posición del punto para dar más sangría */
+    color: #007aff; /* Color del punto */
+    font-size: 1.5rem; /* Aumenta el tamaño del punto */
+    line-height: 1; /* Alinea verticalmente el punto con el texto */
+    top: 0; /* Asegúrate de que el punto esté en la misma línea que el texto */
 }
+
 ol {
     padding-left: 20px; /* Puedes ajustar este valor si quieres más o menos espacio */
     list-style-type: none; /* Esto elimina los números predeterminados */
